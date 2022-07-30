@@ -1,8 +1,13 @@
-const example = {
+//Методы объекта, "this"
+const user = {
     name: 'Alex',
-    city: 'Orenburg',
-    letGreering() {
-        console.log('Hello, my darling')
-    }
+    age: 31,
+};
+
+function sayHi() {
+    console.log('Hello')
 }
-example.letGreering()
+
+user.sayHi = sayHi;
+
+user.sayHi();
