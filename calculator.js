@@ -1,9 +1,9 @@
 let calculator = {
     read(a, b) {
-        a = prompt('a?');
-        b = prompt('b?');
-        this.a = +a;
-        this.b = +b;
+        // a = prompt('a?');
+        // b = prompt('b?');
+        this.a = +prompt('a?');
+        this.b = +prompt('b?');
      },
 
     sum() {
