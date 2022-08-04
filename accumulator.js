@@ -1,3 +1,5 @@
+// Функция-конструктор.
+
 function Accumulator(startingValue) {
      
     this.value = startingValue;
