@@ -1,7 +1,7 @@
 //Функция делает первый символ строки заглавным
 function ucFirst(str) {
     if (str != '') {
-      return str[0].toUpperCase() + str.slice(1);
+        return str[0].toUpperCase() + str.slice(1);
     }
 
     return '';
@@ -26,7 +26,7 @@ checkSpam('VIaGra XxxxX , XX')
 //Функция усечения строки
 
 function truncate(str, maxlength) {
-    
+
     if (str.length > maxlength) {
         return str.slice(0, maxlength - 1) + '…';
     }
@@ -40,14 +40,14 @@ truncate('123456789012345678901234567890', 20)
 
 function extractCurrencyValue(str) {
     let result = '';
-    
-    for(let i = 0; i < str.length; i++) {
 
-       if (isFinite(+str[i]) === true) {
-        result += str[i];
-       } 
+    for (let i = 0; i < str.length; i++) {
+
+        if (isFinite(+str[i]) === true) {
+            result += str[i];
+        }
     }
-   return +result;
+    return +result;
 }
 
 extractCurrencyValue('$120')
