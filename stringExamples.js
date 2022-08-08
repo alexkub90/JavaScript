@@ -35,3 +35,19 @@ function truncate(str, maxlength) {
 }
 
 truncate('123456789012345678901234567890', 20)
+
+//Выделить число (Например из $120 выделить 120)
+
+function extractCurrencyValue(str) {
+    let result = '';
+    
+    for(let i = 0; i < str.length; i++) {
+
+       if (isFinite(+str[i]) === true) {
+        result += str[i];
+       } 
+    }
+   return +result;
+}
+
+extractCurrencyValue('$120')
