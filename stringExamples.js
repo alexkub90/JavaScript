@@ -8,3 +8,17 @@ function ucFirst(str) {
 }
 
 ucFirst('hello')
+
+//Функция проверки на спам (viagra, xxx)
+
+function checkSpam(str) {
+    let strLower = str.toLowerCase();
+
+    if (strLower.includes('viagra') || strLower.includes('xxx')) {
+        return true;
+    }
+
+    return false;
+}
+
+checkSpam('VIaGra XxxxX , XX')
