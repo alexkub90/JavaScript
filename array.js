@@ -14,3 +14,14 @@ for (let fruit of fruits) {
   alert( fruit );
 }
 */
+
+let styles = ['Джаз', 'Блюз']; //Создал массив
+styles.push('Рок-н-ролл') //Добавил в конец Рок-н-ролл
+alert(styles)
+styles[Math.floor(styles.length - 1 / 2)] = 'Классика' //Нашел середину массива и заменил на Классику
+alert(styles)
+styles.shift() //Удалаю первый элемент массива
+alert(styles)
+styles.unshift('Рэп', 'Регги') //Добавляю в начало массива Рэп и Рэгги
+alert(styles)
+
