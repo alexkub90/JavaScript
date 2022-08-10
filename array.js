@@ -25,3 +25,20 @@ alert(styles)
 styles.unshift('Рэп', 'Регги') //Добавляю в начало массива Рэп и Рэгги
 alert(styles)
 
+//Сумма введеных чисел
+function sumInput() {
+  let arr = []
+  
+  for (; true; ) {
+    let value = prompt('Input number', 0)
+    if (value === null || value === '' || !isFinite(value)) break
+    arr.push(+value)
+  }
+  
+  let sum = 0;
+  for(let numbers of arr) {
+    sum += numbers; 
+  };
+ return sum;
+}
+alert(sumInput())
